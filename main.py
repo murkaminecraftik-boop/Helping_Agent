@@ -59,6 +59,7 @@ class SearchWorker(QObject):
                             self.match_found.emit("rename_match", os.path.join(root, name))
         self.finished.emit()
 
+
     def stop(self):
         self._is_running = False
 
